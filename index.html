@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RIZZVERSE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="bg">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- APP CARD -->
+  <div class="card">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <div class="logo-icon">⚡</div>
+      <div class="logo-text" id="typeLogo"></div>
+    </div>
+
+    <p class="tagline">Words that hit. Every time.</p>
+
+    <!-- QUOTE -->
+    <div class="quote" id="quote">
+      “Confidence is quiet. Rizz is felt.”
+    </div>
+
+    <!-- SELECT -->
+    <select id="rizzType">
+      <option value="apology">Apology</option>
+      <option value="smooth">Smooth</option>
+      <option value="playful">Playful</option>
+      <option value="confident">Confident</option>
+      <option value="soft">Soft</option>
+      <option value="cold">Cold</option>
+    </select>
+
+    <button class="main-btn" onclick="generateRizz()">Generate Rizz</button>
+
+    <div id="result">Tap generate. Let it talk.</div>
+
+    <div class="actions">
+      <button class="share-btn" onclick="copyRizz()">📋 Copy</button>
+      <button class="share-btn" onclick="shareWhatsApp()">🟢 WA</button>
+      <button class="share-btn" onclick="shareSnap()">👻 Snap</button>
+      <button class="share-btn" onclick="shareInsta()">📸 Insta</button>
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="copyright">
+    © 2025 • <span id="typeFooter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
